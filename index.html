@@ -1024,13 +1024,13 @@ let won = false;
 let gaveUp = false;
 let acActiveIdx = -1;
 let hintCount = 0;
-let hintDifficulty = localStorage.getItem('pvz-hint-difficulty') || 'medium';
+let hintDifficulty = localStorage.getItem('pvz-hint-difficulty') || 'easy';
 
 // ============================================================
 // DAILY CARD SELECTION
 // ============================================================
 function getDayNumber() {
- const epoch = new Date('2026-05-31T00:00:00Z');
+ const epoch = new Date('2026-05-30T00:00:00Z');
  const now = new Date();
  return Math.floor((now - epoch) / 86400000);
 }
